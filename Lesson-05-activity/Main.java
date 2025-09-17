@@ -27,9 +27,9 @@ class Main {
     calculated sum and then display it.
     
 */
-    int grade1 = 85;
+    int grade1 = 79;
     int grade2 = 90;
-    int grade3 = 78;
+    int grade3 = 86;
     int totalGrades = grade1 + grade2 + grade3;
     System.out.println("The total of the three grades is " + totalGrades);
 
