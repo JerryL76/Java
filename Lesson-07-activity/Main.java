@@ -119,9 +119,9 @@ class Main {
     double B = Input.readDouble();
     System.out.println("Enter a value for c");
     double C = Input.readDouble();
-    double x = -B + Math.sqrt(Math.pow(B, 2) - 4 * A * C) / (2 * A);
-    double x = -B - Math.sqrt(Math.pow(B, 2) - 4 * A * C) / (2 * A);
-    System.out.println("The value of x is " + x);
+    double quadratic1 = -B + Math.sqrt(Math.pow(B, 2) - 4 * A * C) / (2 * A);
+    double quadratic2 = -B - Math.sqrt(Math.pow(B, 2) - 4 * A * C) / (2 * A);
+    System.out.println("The value of x is " + quadratic1 + "and" + quadratic2);
 
 
 
