@@ -9,7 +9,7 @@ class Main {
 	}
 
 	double FtoC(double f){
-		return (f - 32) * 5/9;
+		return (f - 32) * 5.0/9.0;
     }
 
 	double sphereVolume(double r){
