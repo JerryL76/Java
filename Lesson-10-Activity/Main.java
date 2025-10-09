@@ -14,12 +14,12 @@ double gpa(double gpaValue){
 	}
 }	
   
-String isGraduating (int gradeLevel, double credits){
+boolean isGraduating (int gradeLevel, double credits){
 	if (gradeLevel == 12 && credits >= 44){
-		return "Student is Graduating";
+		return true;
 	}
 	else{
-		return "Student is NOT Graduating";
+		return false;
 	}
 			
 }
@@ -55,22 +55,40 @@ double shippingCost(double weightlbs){
 	}
 }
 
-String blueOrViolet(double lightFrequency){
+boolean blueOrViolet(double lightFrequency){
 	if ((lightFrequency >= 600 && lightFrequency <= 670) || (lightFrequency <= 700 && lightFrequency >= 750)){
-		return "True";
+		return true;
 	}
 	else{
-		return "False";
+		return false;
 	}
 }
 	void init(){
 		System.out.println(gpa(91));
-		System.out.println(isGraduating(12, 45));
+		if (isGraduating(12, 45)){
+			System.out.println("You are graduating!");
+		}
+		else{
+			System.out.println("You are not graduating.");
+		}
+		if (isGraduating(11, 45)){
+			System.out.println("You are graduating!");
+		}
+		else{
+			System.out.println("You are not graduating.");
+		}
 		System.out.println(BMI(150, 68));
 		System.out.println(shippingCost(30));
-		System.out.println(blueOrViolet(650));
-  	}
-
- 
-  
+		if (blueOrViolet(650)){
+			System.out.println("The light is blue or violet.");
+		}
+		else{
+			System.out.println("The light is not blue or violet.");
+		}
+		if (blueOrViolet(720)){
+			System.out.println("The light is blue or violet.");
+		}
+		else{
+			System.out.println("The light is not blue or violet.");
+		}
 }
