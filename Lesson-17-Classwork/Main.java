@@ -50,6 +50,7 @@ class Main {
     String bld="";
     for(int x=s.length()-1; x>=0; x--)
       bld+=s.substring(x,x+1);
+      
 
     return bld;
   }
