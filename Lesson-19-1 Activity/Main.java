@@ -29,6 +29,7 @@ class Main {
     String question = "What is " + a + " + " + b + "?";
     return question;
     int sum = a + b;
+    int userAnswer = Input.readInt();
     if (userAnswer == sum){
       return "Correct!";
     } else {
