@@ -13,11 +13,15 @@ class Main {
 
   
 
-  double celsiusToFarhenheit(double c){
-    c = new int[randInt(1,20)]
+  double[] convert(double[] c){
+    int temp = new int[c.length];
     for(int i=0;i<c.length;i++){
-      c[i] = {randInt(0,100)};
+      tmp[i] = CtoF (c[i]);
     }
-        return c*9/5+32;
+    return tmp;
+  }
+
+  double CtoF(double c){
+    return c*9/5+32;
   }
 }
