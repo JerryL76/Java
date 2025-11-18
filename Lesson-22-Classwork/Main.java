@@ -15,11 +15,8 @@ class Main {
 
   double celsiusToFarhenheit(double c){
     double[] tempsC = {randInt(0,100)}
-    double[] tempsF = new double[tempsC.length];
     for(int i=0;i<tempsC.length;i++){
-      tempsF[i] = convert(tempsC[i]);
-      printt(tempsC[i]+"C = ");
-      print(tempsF[i]+"F");
+      c[i] = tempsC[i];
     }
         return c*9/5+32;
   }
