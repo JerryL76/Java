@@ -15,9 +15,8 @@ class Main {
 
   double celsiusToFarhenheit(double c){
     c = new int[randInt(1,20)]
-    double[] tempsC = {randInt(0,100)}
     for(int i=0;i<c.length;i++){
-      c[i] = tempsC[i];
+      c[i] = {randInt(0,100)};
     }
         return c*9/5+32;
   }
