@@ -14,7 +14,7 @@ class Main {
   
 
   double[] convert(double[] c){
-    int temp = new int[c.length];
+    int tmp = new int[c.length];
     for(int i=0;i<c.length;i++){
       tmp[i] = CtoF (c[i]);
     }
