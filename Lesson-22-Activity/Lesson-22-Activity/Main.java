@@ -23,7 +23,7 @@ class Main {
   //Problem 1:
   // Write a function called sumArray that accepts an array of integers and
   // returns the sum of all the values in the array.
-  int[] sumArray(int[] nums){
+  int sumArray(int[] nums){
     int sum = 0;
     for(int i = 0; i < nums.length; i++){
       sum += nums[i];
@@ -36,7 +36,7 @@ class Main {
   //Problem 2
   // Write a function called avgArray that accepts an array of integers and
   // returns the average of the values in the array
-  double[] avgArray(int[] nums){
+  double avgArray(int[] nums){
     int sum = sumArray(nums);
     return (double)sum / nums.length;
   }
@@ -51,7 +51,7 @@ class Main {
   //
   // Return the quiz grade by counting the number of correct answers divided by
   // the number of quistions.
-  double[] quizGrader(char[] studentAns, char[] ansKey){
+  double quizGrader(char[] studentAns, char[] ansKey){
     int correct = 0;
     for(int i = 0; i < studentAns.length; i++){
       if(studentAns[i] == ansKey[i]){
