@@ -9,7 +9,7 @@ class Main {
 
     //Using this array to test your summArray and avgArray function
     int nums[] = {10,15,22,54,32,34,65,87,45,100,23,99,95,87,56,83};
-
+    print (sumArray(nums));
 
 
     
@@ -23,10 +23,10 @@ class Main {
   //Problem 1:
   // Write a function called sumArray that accepts an array of integers and
   // returns the sum of all the values in the array.
-  int sumArray(int[] nums){
+  int sumArray(int[] number){
     int sum = 0;
-    for(int i = 0; i < nums.length; i++){
-      sum += nums[i];
+    for(int i = 0; i < number.length; i++){
+      sum += number[i];
     }
     return sum;
   }
