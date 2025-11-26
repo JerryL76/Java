@@ -13,9 +13,9 @@ class Main {
     String decodedMsg="";
     msg = Input.readFile("Original.txt");
     encodedMsg = encode(msg);
-    Input.writeFile("Original.txt",encodedMsg);
+    Input.writeFile("Encode.txt",encodedMsg);
     decodedMsg = decode (encodedMsg);
-    Input.writeFile("Original.txt",decodedMsg);
+    Input.writeFile("Decoded.txt",decodedMsg);
     
   }
 
@@ -26,7 +26,6 @@ class Main {
   // wrapping arount the alphabet.
   String encode(String txt){
     String bld="";
- 
     for(int x=0; x<=txt.length()-1;x+=3){
       char ch=txt.charAt(x);
       int ascii=(int)ch;
@@ -52,7 +51,7 @@ class Main {
   String decode(String txt){
     String bld="";
  
-    for(int x=0; x<=txt.length()-1;x+=3){
+    for(int x=0; x<=txt.length()-1;x-=3){
       char ch=txt.charAt(x);
       int ascii=(int)ch;
       
