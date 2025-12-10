@@ -14,6 +14,7 @@ class Main {
 
         decodedMsg = decode(encodedMsg);
         Input.writeFile("Decoded.txt", decodedMsg);
+
     }
 
     String encode(String txt) {
@@ -34,6 +35,7 @@ class Main {
         }
 
 
+
         String arrowSwap = "";
         for (int i = 0; i < pairSwap.length(); i++) {
             char c = pairSwap.charAt(i);
@@ -43,6 +45,7 @@ class Main {
             else if (c == 'e' || c == 'E') arrowSwap += '→';
             else arrowSwap += c;
         }
+
 
 
         String output = "";
