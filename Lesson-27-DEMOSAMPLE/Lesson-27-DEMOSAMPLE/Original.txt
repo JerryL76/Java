@@ -1,1 +1,1 @@
-i would not be able to understand binary numbers if i tried, so i just decided to make the code binary numbers. if you decoded it, good for you.
+i would not be able to understand binary numbers if i tried, so i just decided to make the code binary numbers. this is basically my encryption project.
