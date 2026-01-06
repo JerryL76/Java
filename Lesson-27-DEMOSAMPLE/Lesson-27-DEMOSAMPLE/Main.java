@@ -122,7 +122,8 @@ class Main {
             if (i + 1 < arrowReversed.length()) {
                 pairUnswap += arrowReversed.charAt(i + 1);
                 pairUnswap += arrowReversed.charAt(i);
-            } else {
+            } 
+            else {
                 pairUnswap += arrowReversed.charAt(i);
             }
         }
