@@ -11,8 +11,8 @@ class Main {
     Car car1 = new Car("Toyota", "Camry", "Red", 2018, 22000.0);
     Car car2 = new Car("Honda", "Civic", "Blue", 2020, 25000.0);
 
-    car1.displayDetails();
-    car2.displayDetails();
+    car1.honk();
+    car2.honk();
   }
 
 
