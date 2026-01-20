@@ -16,7 +16,7 @@ class Main {
     print(item3.getPrice());
     
     double totalValue = (item1.value + item2.value + item3.value) * 1.08675;
-    print("Total value of items in cart: " + totalValue +"with tax.");
+    print("Total value of items in cart: " + totalValue + "with tax.");
 
   
     
