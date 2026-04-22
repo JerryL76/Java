@@ -45,7 +45,7 @@ class Main {
     // start server
     server.start();
 
-    System.out.println("Server is listening on port " + port);
+    System.out.println("Server is listening on port" + port);
 }
 }
 
