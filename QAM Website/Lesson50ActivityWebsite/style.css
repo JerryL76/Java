@@ -12,40 +12,42 @@ html,body{
 }
 
 .navbar {
-  background-color: #f4f4f4; 
+  background-color: #e3f2fd; /* Very light blue bar */
   padding: 20px;
   text-align: center;
-  border-bottom: 2px solid #ddd;
+  border-bottom: 2px solid #add8e6;
 }
-
 
 .nav-btn {
   text-decoration: none;
-  color: white;
-  padding: 10px 25px;
+  color: #004085; 
+  padding: 12px 30px;
   margin: 0 10px;
-  border-radius: 5px;
-  font-family: Arial, sans-serif;
+  border-radius: 25px; 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-weight: bold;
   display: inline-block;
+  transition: 0.3s;
+  border: 2px solid #87ceeb;
 }
 
 
 .companies-link {
-  background-color: #28a745; 
+  background-color: #87ceeb; 
 }
 
 
 .employees-link {
-  background-color: #6f42c1; 
+  background-color: #add8e6;
 }
 
 
 .nav-btn:hover {
-  opacity: 0.8;
+  background-color: #007bff;
   color: white;
+  border-color: #0056b3;
 }
-}
+
 .subbanner{
   background-color:cornflowerblue;
 }
