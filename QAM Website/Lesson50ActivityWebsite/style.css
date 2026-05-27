@@ -11,18 +11,22 @@ html,body{
   align-items:center;
 }
 
-nav{
-  background-color:cornflowerblue;
+.navbar {
+  background-color: #0000FF; /* Matches your blue banner */
+  padding: 15px;
+  text-align: center;
 }
-nav a{
-  color:black;
-  padding:10px;
-  flex:1;
-  text-decoration:none;
-  text-align:center;
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin: 0 20px;
+  font-weight: bold;
+  font-family: sans-serif;
 }
-nav a:hover{
-  color:white;
+
+.navbar a:hover {
+  text-decoration: underline;
 }
 .subbanner{
   background-color:cornflowerblue;
