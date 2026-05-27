@@ -12,21 +12,39 @@ html,body{
 }
 
 .navbar {
-  background-color: #0000FF; /* Matches your blue banner */
-  padding: 15px;
+  background-color: #f4f4f4; 
+  padding: 20px;
   text-align: center;
+  border-bottom: 2px solid #ddd;
 }
 
-.navbar a {
-  color: white;
+
+.nav-btn {
   text-decoration: none;
-  margin: 0 20px;
+  color: white;
+  padding: 10px 25px;
+  margin: 0 10px;
+  border-radius: 5px;
+  font-family: Arial, sans-serif;
   font-weight: bold;
-  font-family: sans-serif;
+  display: inline-block;
 }
 
-.navbar a:hover {
-  text-decoration: underline;
+
+.companies-link {
+  background-color: #28a745; 
+}
+
+
+.employees-link {
+  background-color: #6f42c1; 
+}
+
+
+.nav-btn:hover {
+  opacity: 0.8;
+  color: white;
+}
 }
 .subbanner{
   background-color:cornflowerblue;
