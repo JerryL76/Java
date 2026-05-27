@@ -1,0 +1,31 @@
+Employee ID,Full Name,Department,Email,Location
+EMP001,Alex Smith,Engineering,alex.smith1@techcore.com,New York
+EMP002,Jordan Lee,IT,jordan.lee2@bytewave.io,Austin
+EMP003,Taylor Brown,Security,taylor.brown3@nexify.ai,Seattle
+EMP004,Morgan Garcia,Support,morgan.garcia4@cybergrid.net,Chicago
+EMP005,Casey Wilson,Development,casey.wilson5@techcore.com,Boston
+EMP006,Riley Martinez,Networking,riley.martinez6@bytewave.io,Denver
+EMP007,Avery Clark,Database Admin,avery.clark7@nexify.ai,San Francisco
+EMP008,Jamie Lewis,QA Testing,jamie.lewis8@cybergrid.net,New York
+EMP009,Cameron Walker,Engineering,cameron.walker9@techcore.com,Austin
+EMP010,Drew Hall,IT,drew.hall10@bytewave.io,Seattle
+EMP011,Blake Allen,Security,blake.allen11@nexify.ai,Chicago
+EMP012,Logan Young,Support,logan.young12@cybergrid.net,Boston
+EMP013,Skyler King,Development,skyler.king13@techcore.com,Denver
+EMP014,Parker Scott,Networking,parker.scott14@bytewave.io,San Francisco
+EMP015,Quinn Johnson,Database Admin,quinn.johnson15@nexify.ai,New York
+EMP016,Alex Lee,QA Testing,alex.lee16@cybergrid.net,Austin
+EMP017,Jordan Brown,Engineering,jordan.brown17@techcore.com,Seattle
+EMP018,Taylor Garcia,IT,taylor.garcia18@bytewave.io,Chicago
+EMP019,Morgan Wilson,Security,morgan.wilson19@nexify.ai,Boston
+EMP020,Casey Martinez,Support,casey.martinez20@cybergrid.net,Denver
+EMP021,Riley Clark,Development,riley.clark21@techcore.com,San Francisco
+EMP022,Avery Lewis,Networking,avery.lewis22@bytewave.io,New York
+EMP023,Jamie Walker,Database Admin,jamie.walker23@nexify.ai,Austin
+EMP024,Cameron Hall,QA Testing,cameron.hall24@cybergrid.net,Seattle
+EMP025,Drew Allen,Engineering,drew.allen25@techcore.com,Chicago
+EMP026,Blake Young,IT,blake.young26@bytewave.io,Boston
+EMP027,Logan King,Security,logan.king27@nexify.ai,Denver
+EMP028,Skyler Scott,Support,skyler.scott28@cybergrid.net,San Francisco
+EMP029,Parker Johnson,Development,parker.johnson29@techcore.com,New York
+EMP030,Quinn Smith,Networking,quinn.smith30@bytewave.io,Austin
