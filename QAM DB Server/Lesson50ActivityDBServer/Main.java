@@ -1,6 +1,24 @@
+import com.sun.net.httpserver.HttpContext;
+import com.sun.net.httpserver.HttpExchange;
+import com.sun.net.httpserver.HttpHandler;
 import com.sun.net.httpserver.HttpServer;
 import java.io.IOException;
+import java.sql.*;
 import java.net.InetSocketAddress;
+import java.util.Map;
+
+//For compiling on the shell on repl: Same on mac
+
+//javac -cp sqlite-jdbc-3.23.1.jar: Main.java
+
+//java -cp sqlite-jdbc-3.23.1.jar: Main
+
+
+
+//Use for windows
+
+//javac -cp sqlite-jdbc-3.23.1.jar; Main.java
+
 
 class Main {
 
@@ -13,9 +31,9 @@ class Main {
         int port = 8500;
 
         // Create server
-        HttpServer server = HttpServer.create(new InetSocketAddress(port), 0);
+        HttpServer server = HttpServer.create(new InetSocketAddress("0.0.0.0", port), 0);
 
-        // Connect to your NEW database
+        // Connect to your database
         Database db = new Database("jdbc:sqlite:corporate.db");
 
 
