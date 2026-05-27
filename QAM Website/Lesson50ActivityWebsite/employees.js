@@ -1,13 +1,16 @@
+let employees;
+
 async function init() {
+  let link = "https://turbo-space-cod-pjwjgwrx7ggp3rv56-8500.app.github.dev/employees";
 
-  let link = "https://turbo-space-cod-pjwjgwrx7ggp3rv56-8500.app.github.dev/"; 
-  let route = "employees";
-
-  let info = await fetch(link + route);
-  employees = await info.json();
-
-  console.log(employees);
-  displayEmployees(employees);
+  try {
+    let response = await fetch(link);
+    employees = await response.json();
+    console.log("Data loaded:", employees);
+    displayEmployees(employees);
+  } catch (error) {
+    console.error("Error fetching data:", error);
+  }
 }
 
 function displayEmployees(data) {
@@ -24,6 +27,7 @@ function displayEmployees(data) {
       </div>
     `;
   }
+
 
   document.getElementById("output").innerHTML = output;
 }
