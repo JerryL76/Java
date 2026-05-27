@@ -3,25 +3,26 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>Corporate Database</title>
+    <title>Corporate Employees</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
-    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
-    <script src="employees.js"></script>
-   </head>
+    <script src="employee.js"></script>
+  </head>
   <body id="body" onload="init()">
+
+    <nav class="navbar">
+      <a href="companies.html">View Companies</a>
+      <a href="employees.html">View Employees</a>
+    </nav>
+
     <div id="banner" class="container center">
-      <h1> Corporate Companies </h1>
+      <h1> Corporate Employees </h1>
     </div>
+    
     <div class="container subbanner">
-      <div>
-        <p> Here is a list of companies in the corporate database.
-        </p>
-      </div>
+      <p>Here is a list of employees in the corporate database.</p>
     </div>
 
-  <div id='output'></div>
-      
+    <div id='output'></div>
   </body>
 </html>
