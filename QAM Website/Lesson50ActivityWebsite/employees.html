@@ -11,8 +11,9 @@
   <body id="body" onload="init()">
 
     <nav class="navbar">
-      <a href="companies.html" class="nav-btn companies-link">View Companies</a>
-      <a href="employees.html" class="nav-btn employees-link" style="border: 3px solid #004085;">View Employees</a>
+      <a href="index.html" class="nav-btn" id="home-link">Home</a>
+      <a href="companies.html" class="nav-btn companies-link" id="companies-link">View Companies</a>
+      <a href="employees.html" class="nav-btn employees-link" id="employees-link">View Employees</a>
     </nav>
 
     <div id="banner" class="container center">
@@ -22,7 +23,9 @@
     <div class="container subbanner">
       <p>Here is a list of employees in the corporate database.</p>
     </div>
-
+    <div class="container center">
+      <input type="text" id="searchInput" onkeyup="filterEmployees()" placeholder="Search by department...">
+    </div>
     <div id='output'></div>
       
   </body>

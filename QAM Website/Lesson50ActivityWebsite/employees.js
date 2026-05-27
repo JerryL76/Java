@@ -1,29 +1,46 @@
-let employees;
-
 async function init() {
   let link = "https://turbo-space-cod-pjwjgwrx7ggp3rv56-8500.app.github.dev/employees";
-
   let info = await fetch(link);
-  employees = await info.json();
-
-  displayEmployees(employees);
+  let data = await info.json();
+  displayEmployees(data);
 }
 
 function displayEmployees(data) {
   let output = "";
-
   for (let i = 1; i < data.length; i++) {
     output += `
-      <div class="card">
-        <h3>${data[i].field2}</h3>
-        <p><strong>Dept:</strong> ${data[i].field3}</p>
-        <p><strong>Email:</strong> ${data[i].field4}</p>
-        <p><strong>Location:</strong> ${data[i].field5}</p>
-      </div>
-    `;
+      <div class="card" onclick="flipCard(this)">
+        <div class="card-inner">
+          <div class="card-front">
+            <h3>${data[i].field2}</h3>
+            <p style="font-size: 0.8rem; color: #004085;">Click to flip</p>
+          </div>
+          <div class="card-back">
+            <p><strong>Dept:</strong> ${data[i].field3}</p>
+            <p><strong>Email:</strong> ${data[i].field4}</p>
+            <p><strong>Location:</strong> ${data[i].field5}</p>
+          </div>
+        </div>
+      </div>`;
   }
-
   document.getElementById("output").innerHTML = output;
 }
 
-init();
+function flipCard(cardElement) {
+  cardElement.classList.toggle('is-flipped');
+}
+
+function filterEmployees() {
+  let input = document.getElementById("searchInput").value.toLowerCase();
+  let cards = document.getElementsByClassName("card");
+
+  for (let i = 0; i < cards.length; i++) {
+    let cardText = cards[i].innerText.toLowerCase();
+    
+    if (cardText.includes(input)) {
+      cards[i].style.display = "block";
+    } else {
+      cards[i].style.display = "none";
+    }
+  }
+}

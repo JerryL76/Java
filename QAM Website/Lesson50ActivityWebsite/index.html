@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Corporate Portal</title>
+    
+    <style>
+
+      #body {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        margin: 0;
+        padding: 0;
+        background-color: #f8f9fa;
+        min-height: 100vh;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+  
+      .navbar {
+        width: 100%;
+        background-color: #e3f2fd;
+        padding: 20px 0;
+        text-align: center;
+        border-bottom: 2px solid #add8e6;
+      }
+
+      .nav-btn {
+        text-decoration: none;
+        color: #004085;
+        padding: 10px 25px;
+        margin: 0 10px;
+        border-radius: 25px;
+        font-weight: bold;
+        display: inline-block;
+        background-color: #add8e6;
+        transition: 0.3s;
+        border: 2px solid transparent;
+      }
+
+      .nav-btn:hover {
+        background-color: #007bff;
+        color: white;
+      }
+
+
+      #banner {
+        width: 100%;
+        background-color: #0000ff;
+        color: white;
+        padding: 60px 0;
+        text-align: center;
+        margin-bottom: 40px;
+        box-shadow: inset 0 -5px 15px rgba(0,0,0,0.1);
+      }
+
+      #banner h1 {
+        margin: 0;
+        font-size: 2.5rem;
+      }
+
+      #banner p {
+        margin-top: 10px;
+        opacity: 0.9;
+        font-size: 1.1rem;
+      }
+
+
+      .main-content {
+        max-width: 1000px;
+        width: 90%;
+        text-align: center;
+        padding-bottom: 50px;
+      }
+
+      .info-grid {
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+        margin-top: 40px;
+        flex-wrap: wrap;
+      }
+
+
+      .card {
+        flex: 1;
+        min-width: 280px;
+        background: white;
+        padding: 25px;
+        border-radius: 12px;
+        box-shadow: 0 6px 12px rgba(0,0,0,0.08);
+        border-top: 6px solid #87ceeb;
+        transition: transform 0.2s;
+      }
+
+      .card:hover {
+        transform: translateY(-5px);
+      }
+
+      .card h3 {
+        color: #004085;
+        margin-top: 0;
+      }
+
+
+      .status-bar {
+        margin-top: 60px;
+        background: #e3f2fd;
+        padding: 15px 35px;
+        border-radius: 50px;
+        display: inline-block;
+        border: 1px solid #add8e6;
+        font-size: 0.95rem;
+      }
+
+      .dot {
+        color: #28a745;
+        font-size: 1.2rem;
+        vertical-align: middle;
+      }
+    </style>
+  </head>
+
+  <body id="body">
+
+    <nav class="navbar">
+      <a href="index.html" class="nav-btn" style="border: 3px solid #004085;">Home</a>
+      <a href="companies.html" class="nav-btn">View Companies</a>
+      <a href="employees.html" class="nav-btn">View Employees</a>
+    </nav>
+
+    <div id="banner">
+      <h1>Corporate Data Management</h1>
+      <p>Secure Interface for Corporate Records & Personnel</p>
+    </div>
+    
+    <div class="main-content">
+      
+      <div style="margin-bottom: 20px;">
+        <h2 style="color: #333;">System Overview</h2>
+        <p style="color: #555; line-height: 1.8;">
+          Welcome to the central portal. This system is connected to a live <strong>SQLite database</strong> 
+          running on a Java backend. Use this dashboard to monitor business entities and staff 
+          allocations across all regional branches.
+        </p>
+      </div>
+
+      <div class="info-grid">
+        <div class="card">
+          <h3>Live Database</h3>
+          <p>Directly connected to <code>corporate.db</code> for real-time data retrieval and management.</p>
+        </div>
+
+        <div class="card">
+          <h3>Personnel</h3>
+          <p>Browse detailed employee records including departments, emails, and office locations.</p>
+        </div>
+
+        <div class="card">
+          <h3>Analytics</h3>
+          <p>Track organizational growth and industry distribution across the entire corporate sector.</p>
+        </div>
+      </div>
+
+      <div class="status-bar">
+        <span class="dot">●</span> <strong>System Status:</strong> Operational 
+        <span style="margin: 0 20px; color: #add8e6;">|</span>
+        <strong>Server:</strong> Java Port 8500
+      </div>
+
+    </div>
+      
+  </body>
+</html>
