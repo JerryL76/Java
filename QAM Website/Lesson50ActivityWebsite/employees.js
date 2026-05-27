@@ -1,7 +1,6 @@
-let employees;
-
 async function init() {
-  let link = "https://turbo-space-cod-pjwjgwrx7ggp3rv56-8500.app.github.dev/";
+
+  let link = "https://turbo-space-cod-pjwjgwrx7ggp3rv56-8500.app.github.dev/"; 
   let route = "employees";
 
   let info = await fetch(link + route);
@@ -13,6 +12,7 @@ async function init() {
 
 function displayEmployees(data) {
   let output = "";
+
 
   for (let i = 1; i < data.length; i++) {
     output += `
