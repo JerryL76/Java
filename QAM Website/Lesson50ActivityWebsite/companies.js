@@ -14,12 +14,13 @@ async function init() {
 function displayCompanies(data) {
   let output = "";
 
-  for (let i = 0; i < data.length; i++) {
+  for (let i = 1; i < data.length; i++) {
     output += `
       <div class="card">
-        <h3>${data[i].company_name}</h3>
-        <p>Industry: ${data[i].industry}</p>
-        <p>Location: ${data[i].city}</p>
+        <h3>${data[i].field2}</h3>
+        <p><strong>Industry:</strong> ${data[i].field3}</p>
+        <p><strong>Net Worth:</strong> ${data[i].field4}</p>
+        <p><strong>Headquarters:</strong> ${data[i].field5}</p>
       </div>
     `;
   }
