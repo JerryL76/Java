@@ -15,14 +15,14 @@ function displayCompanies(data) {
   let output = "";
 
   for (let i = 0; i < data.length; i++) {
-  output += `
-    <div class="card">
-      <h3>${data[i].company_name}</h3>
-      <p>Industry: ${data[i].industry}</p>
-      <p>Location: ${data[i].city}</p>
-    </div>
-  `;
-}
+    output += `
+      <div class="card">
+        <h3>${data[i].company_name}</h3>
+        <p>Industry: ${data[i].industry}</p>
+        <p>Location: ${data[i].city}</p>
+      </div>
+    `;
+  }
 
   document.getElementById("output").innerHTML = output;
 }
